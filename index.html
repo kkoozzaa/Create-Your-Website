@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<script>
+function Function() {
+const element = document.getElementById("box");
+element.remove();
+const newDiv = document.createElement("box1");
+const p = document.createElement("p");
+document.body.appendChild(p);
+p.textContent = "Die Grundlagen der Webentwicklung"
+const h = document.createElement("h");
+document.body.appendChild(h);
+h.innerHTML = `
+<div style="max-width: 1000px; margin: 0 auto; padding: 30px; text-align: left; line-height: 1.5; font-size: 18px;">
+<h1>Anleitung: So erstellst du deine eigene Webseite</h1>
+<h2>1. Was brauchst du?</h2>
+<p>Um eine Webseite zu erstellen, brauchst du drei wichtige Dinge:</p>
+<ul>
+<li><b>HTML:</b> Damit erstellst du den Inhalt deiner Webseite.</li>
+<li><b>CSS:</b> Damit gestaltest du das Aussehen deiner Webseite.</li>
+<li><b>JavaScript:</b> Damit kannst du Funktionen und Aktionen erstellen.</li>
+</ul>
+<h2>2. HTML – Der Aufbau deiner Webseite</h2>
+<p>HTML ist das Grundgerüst deiner Webseite. Damit kannst du Texte, Bilder, Überschriften und Buttons hinzufügen.</p>
+<h3>Die wichtigsten HTML-Befehle:</h3>
+<ul>
+<li><code>&lt;h1&gt;</code> – Grosse Überschrift</li>
+<li><code>&lt;h2&gt;</code> – Kleinere Überschrift</li>
+<li><code>&lt;p&gt;</code> – Text</li>
+<li><code>&lt;button&gt;</code> – Button</li>
+<li><code>&lt;img&gt;</code> – Bild</li>
+<li><code>&lt;a&gt;</code> – Link</li>
+<li><code>&lt;div&gt;</code> – Erstellt einen Bereich</li>
+<li><code>&lt;br&gt;</code> – Neue Zeile</li>
+</ul>
+<h3>Beispiel:</h3>
+<pre style="background:#eeeeee; padding:15px; overflow-x:auto; color:#222;">
+&lt;h1&gt;Meine Webseite&lt;/h1&gt;
+&lt;p&gt;Willkommen auf meiner Webseite!&lt;/p&gt;
+&lt;button&gt;Klick mich!&lt;/button&gt;
+</pre>
+<h2>3. CSS – Das Design deiner Webseite</h2>
+<p>Mit CSS kannst du das Aussehen deiner Webseite verändern. Du kannst Farben, Schriftgrössen und Abstände einstellen.</p>
+<h3>Die wichtigsten CSS-Befehle:</h3>
+<ul>
+<li><code>color</code> – Ändert die Textfarbe</li>
+<li><code>background-color</code> – Ändert die Hintergrundfarbe</li>
+<li><code>font-size</code> – Ändert die Schriftgrösse</li>
+<li><code>text-align</code> – Richtet den Text aus</li>
+<li><code>margin</code> – Abstand ausserhalb eines Elements</li>
+<li><code>padding</code> – Abstand innerhalb eines Elements</li>
+<li><code>border</code> – Fügt einen Rahmen hinzu</li>
+<li><code>height</code> – Ändert die Höhe</li>
+<li><code>width</code> – Ändert die Breite</li>
+</ul>
+<h3>Beispiel:</h3>
+<pre style="background:#eeeeee; padding:15px; overflow-x:auto; color:#222;">
+body {Starten
+    background-color: lightblue;
+}
+h1 {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+button {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+</pre>
+<h2>4. JavaScript – Mach deine Webseite interaktiv</h2>
+<p>JavaScript sorgt dafür, dass deine Webseite auf Aktionen reagieren kann. Zum Beispiel kann ein Button eine Nachricht anzeigen.</p>
+<h3>Die wichtigsten JavaScript-Befehle:</h3>
+<ul>
+<li><code>alert()</code> – Zeigt eine Nachricht</li>
+<li><code>getElementById()</code> – Findet ein Element mit einer ID</li>
+<li><code>textContent</code> – Ändert einen Text</li>
+<li><code>createElement()</code> – Erstellt ein neues Element</li>
+<li><code>appendChild()</code> – Fügt ein Element hinzu</li>
+<li><code>remove()</code> – Entfernt ein Element</li>
+<li><code>addEventListener()</code> – Reagiert auf Aktionen</li>
+</ul>
+<h3>Beispiel:</h3>
+<pre style="background:#eeeeee; padding:15px; overflow-x:auto; color:#222;">
+&lt;button onclick="zeigeNachricht()"&gt;Klick mich!&lt;/button&gt;
+&lt;script&gt;
+function zeigeNachricht() {
+    alert("Hallo! Willkommen!");
+}
+&lt;/script&gt;
+</pre>
+<p>Wenn du auf den Button klickst, erscheint eine Nachricht.</p>
+<h2>5. Wie funktioniert diese Webseite?</h2>
+<p>Auch diese Webseite wurde mit HTML, CSS und JavaScript erstellt. Hier kannst du einige Beispiele aus dem Quellcode sehen.</p>
+<h3>HTML:</h3>
+<pre style="background:#eeeeee; padding:15px; overflow-x:auto; color:#222;">
+&lt;div id="box"&gt;
+    &lt;h1&gt;Erstelle deine eigene Webseite&lt;/h1&gt;
+    &lt;button onclick="Function()"&gt;Los geht's!&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+<ul>
+<li><code>div</code> erstellt einen Bereich.</li>
+<li><code>id="box"</code> gibt diesem Bereich einen Namen.</li>
+<li><code>h1</code> erstellt eine Überschrift.</li>
+<li><code>button</code> erstellt einen Button.</li>
+<li><code>onclick</code> startet eine JavaScript-Funktion beim Klicken.</li>
+</ul>
+<h3>JavaScript:</h3>
+<pre style="background:#eeeeee; padding:15px; overflow-x:auto; color:#222;">
+function Function() {
+    const element = document.getElementById("box");
+    element.remove();
+}
+</pre>
+<ul>
+<li><code>function</code> erstellt eine Funktion.</li>
+<li><code>const</code> erstellt eine Variable.</li>
+<li><code>getElementById()</code> sucht ein Element.</li>
+<li><code>remove()</code> entfernt das Element.</li>
+</ul>
+<p>In diesem Beispiel wird der Startbereich entfernt, wenn du auf den Button klickst.</p>
+<h3>CSS:</h3>
+<pre style="background:#eeeeee; padding:15px; overflow-x:auto; color:#222;">
+#box {
+    text-align: center;
+    font-size: 48px;
+    color: black;
+}
+</pre>
+<ul>
+<li><code>#box</code> wählt das Element mit der ID box aus.</li>
+<li><code>text-align</code> richtet den Text aus.</li>
+<li><code>font-size</code> bestimmt die Schriftgrösse.</li>
+<li><code>color</code> bestimmt die Textfarbe.</li>
+</ul>
+<h2>6. Jetzt bist du dran!</h2>
+<p>Jetzt kennst du die wichtigsten Grundlagen. Versuche, deine eigene Webseite zu erstellen!</p>
+<ol>
+<li>Erstelle eine Überschrift mit deinem Namen.</li>
+<li>Schreibe einen kurzen Text über dich.</li>
+<li>Ändere die Hintergrundfarbe mit CSS.</li>
+<li>Erstelle einen Button.</li>
+<li>Programmiere den Button mit JavaScript.</li>
+</ol>
+<p><b>Tipp:</b> Du kannst jederzeit den Quellcode dieser Webseite anschauen und daraus lernen. Probiere verschiedene Befehle aus und finde heraus, was passiert!</p>
+<h2>Viel Spass beim Programmieren!</h2>
+</div>
+`;
+const currentDiv = document.getElementById("box1");
+document.body.insertBefore(newDiv, currentDiv);
+newDiv.setAttribute("style", "height: 1000px; line-height: 200px; border: 0px dashed #FFFFFF; text-align:Center; font-size: 48px; color: black;");
+p.setAttribute("style", "text-align:left; border: 10px dashed #FFFFFF; font-size: 48px; color: black;");
+h.setAttribute("style", "height: 1000px;  text-align:Center; font-size: 32px; color: black;");
+}
+</script>
+<head>
+</head>
+<body>
+<div id="box">
+<h1>Gestalte deine eigene Webseite!</h1>
+<button onclick="Function()"
+type="button">Starten
+</button>
+</div>
+</body>
+<style>
+#box {
+height: 300px;
+line-height: 100px;
+border: 200px dashed #FFFFFF;
+text-align: center;
+font-size: 48px;
+color: black;
+button {
+background-color: black;
+color: white;
+padding: 15px 32px;
+text-align: center;
+font-size: 32px;
+}
+<style>
+</html>
